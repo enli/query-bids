@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coding Assignment - UI by Peeyoosh Sangolekar</title>
+
+  <link href="css/app.css" rel="stylesheet"/>
+  <script src="js/BidsQuery.js"></script>
+  <script src="js/MockBidsGenerator.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <p><strong>In Developer console,</strong></p>
+  <p><i>var bids = new BidsGenerator().generate();</i> // generate() also accepts a number</p>
+  <p><i>var q = new BidsQuery(bids);</i> // instantiate BidsQuery</p>
+  <p><i>q.getBidsByLastUpdated(5);</i> //get latest 5 bids by updated date</p>
+  <p><i>q.getBidsByLastExecuted(5);</i> //get latest 5 bids by last executed date</p>
+
+  <p><strong>Bonus: </strong></p>
+  <p>getBidsByLastUpdated and getBidsByLastExecuted methods accept filter name as second
+    parameter.</p>
+  <p><i>q.getBidsByLastUpdated(5, 'foo');</i> // filter foo tag</p>
+</div>
+</body>
+</html>
